@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Sample Python Script","text":"<pre><code>def greet():\n    name = input(\"Please enter your name: \")\n    print(f\"Hello, {name}!\")\n</code></pre>"},{"location":"tutorials/python/","title":"Test","text":""}]}
