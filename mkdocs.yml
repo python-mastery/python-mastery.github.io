@@ -1,4 +1,4 @@
-site_name: My Tutorial Site
+site_name: Python Mastery
 site_url: https://python-mastery.github.io/
 theme:
   name: material
@@ -50,8 +50,7 @@ theme:
 
   extra:
     -css: css/extra.css
-    generator: false
-
+  
   icon:
     repo: fontawesome/brands/github-alt
   logo: img/icon-white.svg
@@ -61,12 +60,16 @@ repo_name: python-mastery/python-mastery.github.io
 repo_url: https://github.com/python-mastery/python-mastery.github.io
 nav:
   - Home: index.md
-  - Tutorials:
-      - Python: tutorials/python/index.md
+  - Tutorials: tutorials/index.md
+  - Python: tutorials/python/index.md
+
 plugins:
 - search
 - mkdocstrings
 - include-markdown
+
+extra:
+  generator: false
 
 markdown_extensions:
   - attr_list
