@@ -1,3 +1,9 @@
-.md-footer {
-    display: none;
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
+    font-weight: 700;
 }
+
+strong {
+    font-weight: 600;
+}
+
+/* .md-code__content {} */
