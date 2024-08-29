@@ -1,3 +1,3 @@
 # Tutorials
 
-- [Python](tutorials/python/)
+- [Python](python/index.md)

@@ -7,3 +7,7 @@ def greet():
 ```
 
 1.  :simple-python: This takes the user's `name` as input.
+
+```py title="embedded_hello.py" linenums="1" hl_lines="2"
+--8<-- "docs_src/sample_script/hello.py"
+```
