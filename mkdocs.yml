@@ -43,16 +43,17 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    # - navigation.sections
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-
-  extra:
-    -css: css/extra.css
+    # - toc.integrate
   
   icon:
     repo: fontawesome/brands/github-alt
+    admonition:
+      note: fontawesome/regular/lightbulb
   logo: img/icon-white.svg
   favicon: img/favicon.png
   language: en
@@ -61,7 +62,12 @@ repo_url: https://github.com/python-mastery/python-mastery.github.io
 nav:
   - Home: index.md
   - Tutorials: tutorials/index.md
-  - Python: tutorials/python/index.md
+  - Python:
+      - tutorials/python/index.md
+      - Fundamentals:
+        - tutorials/python/fundamentals/index.md
+        - What is a Programming Language: tutorials/python/fundamentals/what-is-a-programming-language.md
+        - Hello World: tutorials/python/fundamentals/hello-world.md
 
 plugins:
 - search
@@ -70,6 +76,8 @@ plugins:
 
 extra:
   generator: false
+extra_css:
+  - css/extra.css
 
 markdown_extensions:
   - attr_list
@@ -82,6 +90,8 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
