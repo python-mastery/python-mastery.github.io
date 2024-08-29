@@ -3,6 +3,9 @@ site_url: https://python-mastery.github.io/
 theme:
   name: material
   highlightpy: true
+  font:
+    code: JetBrains Mono
+    text: Hind Siliguri
   palette:
   - media: "(prefers-color-scheme)"
     toggle:
@@ -25,7 +28,7 @@ theme:
   features:
   - content.code.annotate
   - content.code.copy
-  - content.code.select
+  # - content.code.select
   - content.footnote.tooltips
   - content.tabs.link
   - content.tooltips
@@ -45,6 +48,9 @@ theme:
   - search.suggest
   - toc.follow
 
+  extra:
+    -css: css/extra.css
+
   icon:
     repo: fontawesome/brands/github-alt
   logo: img/icon-white.svg
@@ -56,17 +62,16 @@ nav:
   - Home: index.md
   - Tutorials:
       - Python: tutorials/python/index.md
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/python-mastery
-
 plugins:
 - search
 - mkdocstrings
 - include-markdown
 
 markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -74,3 +79,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
