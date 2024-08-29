@@ -60,9 +60,13 @@ theme:
 repo_name: python-mastery/python-mastery.github.io
 repo_url: https://github.com/python-mastery/python-mastery.github.io
 nav:
-  - Home: index.md
-  - Tutorials: tutorials/index.md
-  - Python:
+  - Home:
+    - index.md
+    - Tutorials:
+      - tutorials/index.md
+  - Tutorials:
+    - tutorials/index.md
+    - Python:
       - tutorials/python/index.md
       - Fundamentals:
         - tutorials/python/fundamentals/index.md
