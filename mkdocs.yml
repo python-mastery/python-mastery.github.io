@@ -50,6 +50,7 @@ theme:
 
   extra:
     -css: css/extra.css
+    generator: false
 
   icon:
     repo: fontawesome/brands/github-alt
