@@ -72,6 +72,10 @@ nav:
         - tutorials/python/fundamentals/index.md
         - What is a Programming Language: tutorials/python/fundamentals/what-is-a-programming-language.md
         - Hello World: tutorials/python/fundamentals/hello-world.md
+  - Classes:
+    - classes/index.md
+    #  - Day 1:
+    #    - classes/day-1/index.md
 
 plugins:
 - search
